@@ -19,6 +19,7 @@ public class AmazonHomePage extends BaseClass{
 		searchTxtBox.sendKeys(searchKeyword);
 		Thread.sleep(3000);
 		searchBtn.click();
+		
 	}
 
 	public void yourAccount(WebDriver driver) throws InterruptedException {
