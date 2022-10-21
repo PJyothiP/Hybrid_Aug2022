@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browser" value="Safari"/>
+  <test parallel="tests" name="SafariTest(failed)">
+    <parameter name="browser" value="Safari"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <exclude name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.MainTestCase">
+        <methods>
+          <include name="driverSetUP"/>
+          <include name="driverSetUP"/>
+          <include name="driverSetUP"/>
+          <include name="readConfig"/>
+          <include name="readConfig"/>
+          <include name="readConfig"/>
+          <include name="yourAccount" invocation-numbers="0"/>
+          <include name="driverQuit"/>
+          <include name="driverQuit"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- TestCases.MainTestCase -->
+    </classes>
+  </test> <!-- SafariTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
