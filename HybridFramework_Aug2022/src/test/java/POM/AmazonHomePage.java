@@ -20,6 +20,9 @@ public class AmazonHomePage extends BaseClass{
 		Thread.sleep(3000);
 		searchBtn.click();
 		
+		
+		
+		
 	}
 
 	public void yourAccount(WebDriver driver) throws InterruptedException {
